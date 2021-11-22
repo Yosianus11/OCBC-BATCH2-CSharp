@@ -1,0 +1,16 @@
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.exe
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.deps.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.runtimeconfig.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.runtimeconfig.dev.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\ref\HitungNilai4.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\bin\Debug\net5.0\HitungNilai4.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.csproj.AssemblyReference.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.AssemblyInfoInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.AssemblyInfo.cs
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.csproj.CoreCompileInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\ref\HitungNilai4.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi02\HitungNilai4\obj\Debug\net5.0\HitungNilai4.genruntimeconfig.cache
