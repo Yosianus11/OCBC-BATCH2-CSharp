@@ -1,0 +1,47 @@
+check git current username & email 
+---
+git config --list
+
+change config
+---
+git config --global user.name "Nama"
+git config --global user.email "email"
+git config --global credential.username "username"
+
+pindah branch 
+---
+git checkout -b main
+git checkout -b master
+
+cek branch
+---
+git status
+
+remote branch
+---
+git branch //local branch
+git branch -r //remote branch
+git branch -a //all local and remote branch
+
+git remote
+---
+git remote add origin https://github.com/username/namarepo.git
+git remote set-url origin git@github.com:username/namarepo.git
+
+remove semua repositori
+---
+rm -rf .git
+
+git linked check remote
+---
+git remote -v
+
+bermain git
+---
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Leonuch/flex.git
+git checkout -b main
+git pull origin main --allow-unrelated-histories
+git push -u origin main

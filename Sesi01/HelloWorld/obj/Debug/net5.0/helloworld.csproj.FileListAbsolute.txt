@@ -1,0 +1,16 @@
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.exe
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.deps.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.runtimeconfig.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.runtimeconfig.dev.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\ref\helloworld.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\bin\Debug\net5.0\helloworld.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.csproj.AssemblyReference.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.AssemblyInfoInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.AssemblyInfo.cs
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.csproj.CoreCompileInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\ref\helloworld.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi01\HelloWorld\obj\Debug\net5.0\helloworld.genruntimeconfig.cache

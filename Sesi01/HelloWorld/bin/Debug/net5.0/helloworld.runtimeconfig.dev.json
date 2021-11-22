@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\yosia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\yosia\\.nuget\\packages"
+    ]
+  }
+}
