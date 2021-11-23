@@ -17,14 +17,50 @@ namespace Assignment2
                 {
                     Console.Write(" ");
                 }
+
+                //sisi kiri
                 for (k = 1; k <= a; k++)
                 {
-                    Console.Write(k);
+                    if (k >= 10)
+                    {
+                        int lim = k % 10 + 1;
+                        if (lim >= 10)
+                        {
+                            lim = 1;
+                            Console.Write(lim);
+                        }
+                        else
+                        {
+                            Console.Write(lim);
+                        }
+                    }
+                    else
+                    {
+                        Console.Write(k);
+                    }
                 }
-                
-                for (m = a-1 ; m >= 1; m--)
+
+                //sisi kanan
+                for (m = a - 1; m >= 1; m--)
                 {
-                    Console.Write(m);
+                    if (m >= 10)
+                    {
+                        int lim = m % 10 + 1;
+                        if (lim >= 10)
+                        {
+                            lim = 1;
+                            Console.Write(lim);
+                        }
+                        else
+                        {
+                            Console.Write(lim);
+                        }
+                    }
+                    else
+                    {
+                        Console.Write(m);
+                    }
+
                 }
                 Console.Write("\n");
             }

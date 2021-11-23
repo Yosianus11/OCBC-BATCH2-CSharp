@@ -8,12 +8,16 @@ namespace Soal1
         {
             char hrf = 'A';
             int a, j, k, m;
-            for (a = 1; a <= 5; a++)
+
+            Console.Write("Masukan tinggi segitiga : ");
+            int tinggi= int.Parse(Console.ReadLine());
+            for (a = 1; a <= tinggi; a++)
             {
-                for (j = 5; j >= a; j--){
+                //mebuat looping kosong pojok kiri atas
+                for (j = tinggi; j >= a; j--){
                     Console.Write(" ");
                 }
-                    
+ 
                 for (k = 1; k <= a; k++){
                      Console.Write(hrf++);
                 }

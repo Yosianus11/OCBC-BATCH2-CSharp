@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace String3
 {
@@ -16,6 +18,11 @@ namespace String3
 
             str[1] = "Merupakan";
             str[3] = "test, juga!";
+            
+            string newElement = "| Ini Coba Push NEW!";
+            List<string> list = new List<string>(str.ToList());
+            list.Add(newElement);
+            str = list.ToArray();
 
             Console.WriteLine("Array termodifikasi : ");
 

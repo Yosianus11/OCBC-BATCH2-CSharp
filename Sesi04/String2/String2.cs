@@ -56,10 +56,6 @@ namespace String2
             idx = str2.LastIndexOf("Satu", StringComparison.Ordinal);
             Console.WriteLine("Indeks kemunculan terakhir dari Satu: " + idx);
 
-
-
-
-
         }
     }
 }
