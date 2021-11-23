@@ -1,0 +1,20 @@
+Panduan Assigment 1
+
+Terdapat 9 menu yang dapat di pilih antara lain : 
+1. Segitiga Alfabet | Membuat segitiga dengan huruf"
+2. Segitiga Angka   | Membuat segitiga dengan Angka"
+3. Faktorial        | Faktorial dari input number"
+4. Reversed number  | Membalikan angka yang diinpukan"
+   1. Reversed dengan int variable"
+   2. Reversed dengan string variable"
+5. Number to Words  | Convert angka ke kata"
+6. Fibonacci        | Penambahan angka sebelumnya selama looping"
+7. Paliandrome      | Menentukan apakah value sama percis"
+8. About Me         | Profile Peserta"
+9. Exit             | Keluar Menu"
+
+input pilihan sesuai dengan nomer pada menu yang tersedia, menggunakan akan yaa .......
+
+Setelah itu akan ada opsi untuk kembali ke pilihan menu atau selesai sampai di sini dengan mengiputkan y/n
+
+Sekian untuk panduaan selamat menggunakan!!!!!!!!!!!!!! :D

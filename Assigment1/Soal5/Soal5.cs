@@ -1,60 +1,56 @@
 using System;
 
-namespace Assignment5
+namespace Soal5
 {
-    class Assignment5
+    class Soal5
     {
         static void Main(string[] args)
         {
-            int number;
-            Console.Write("Masukan Angka : " );
+            int number, lanjut, num_digits;
+            int[] a = new int[10];
+            
+            // kata dari setiap huruf 0 - 9
+            string[] digits_words = {
+            "zero",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine"
+         };
+            // input number
+            Console.Write("Instert Number : ");
             number = int.Parse(Console.ReadLine());
-
-            if (number == 0)
-                return "zero";
-
-            if (number < 0)
-                return "minus " + NumberToWords(Math.Abs(number));
-
-            string words = "";
-
-            if ((number / 1000000) > 0)
+            Console.Write("Number (words): ");
+            lanjut = 0;
+            num_digits = 0;
+            //looping selama var-> number belum 0 untuk memecah number ke satuan
+            do
             {
-                words += NumberToWords(number / 1000000) + " million ";
-                number %= 1000000;
-            }
+                //mendapatkan angka terakhir dari setiap loop number
+                lanjut = number % 10;
 
-            if ((number / 1000) > 0)
-            {
-                words += NumberToWords(number / 1000) + " thousand ";
-                number %= 1000;
-            }
+                // memasukan hasil mod ke dalam number digit yang akan di looping
+                a[num_digits] = lanjut;
+                //Console.WriteLine(a[num_digits]); - Help
 
-            if ((number / 100) > 0)
-            {
-                words += NumberToWords(number / 100) + " hundred ";
-                number %= 100;
-            }
-
-            if (number > 0)
-            {
-                if (words != "")
-                    words += "and ";
-
-                var unitsMap = new[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
-                var tensMap = new[] { "zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
-
-                if (number < 20)
-                    words += unitsMap[number];
-                else
-                {
-                    words += tensMap[number / 10];
-                    if ((number % 10) > 0)
-                        words += "-" + unitsMap[number % 10];
-                }
-            }
-
-            return words;
+                //increment number of digits
+                num_digits++;
+                
+                // Bagi number input untuk dapat digit ke dua dari belakang yang kemudian akan dilooping kembali dan di mod
+                number = number / 10;
+            } while (number > 0);
+            
+            num_digits--;
+            //looping reverse dari loopingan split di atas
+            for (; num_digits >= 0; num_digits--)
+            //pring hasil convert sesuai indek dari angak yang di simpan pada var -> num_digits di array a
+                Console.Write(digits_words[a[num_digits]] + " ");
+            Console.ReadLine();
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Assignment2
                 //sisi kiri
                 for (k = 1; k <= a; k++)
                 {
+                    //limit digit jika diinput lebih dari 10
                     if (k >= 10)
                     {
                         int lim = k % 10 + 1;
