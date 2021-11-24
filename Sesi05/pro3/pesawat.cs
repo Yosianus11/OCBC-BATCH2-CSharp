@@ -9,7 +9,7 @@ public class pesawat
 
     public void terbang()
     {
-        Console.WriteLine("Pesawat dengan nama {0}, sedang take off", this.Nama);
+        Console.WriteLine("Pesawat dengan nama {0}, yang memilliki roda {2} dan membawa {3}, sedang take off, dan sekarang berada pada ketinggian {1}", this.Nama, this.Ketinggian, this.JumlahRoda, this.JumlahPenumpang);
     }
 
 

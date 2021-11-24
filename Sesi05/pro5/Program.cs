@@ -13,7 +13,7 @@ namespace pro5
 
         public virtual void penjumlahanperkaliandll()
         {
-            Console.WriteLine("Overiding 2 .... ------>>>>>>");
+            Console.WriteLine("Overiding 1 .... ------>>>>>>");
             Console.WriteLine("Hasil Penjumlahan angka {0} dan angka {1} = {2}", bilangan1, bilangan2, bilangan1 + bilangan2);
             Console.WriteLine("Hasil Perkalian angka {0} dan angka {1} = {2} \n\n", bilangan1, bilangan2, bilangan1 * bilangan2);
         }
