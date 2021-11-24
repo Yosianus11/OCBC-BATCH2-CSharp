@@ -18,3 +18,5 @@ input pilihan sesuai dengan nomer pada menu yang tersedia, menggunakan akan yaa 
 Setelah itu akan ada opsi untuk kembali ke pilihan menu atau selesai sampai di sini dengan mengiputkan y/n
 
 Sekian untuk panduaan selamat menggunakan!!!!!!!!!!!!!! :D
+
+Link GIT : https://github.com/Yosianus11/OCBC-BATCH2-CSharp/tree/main/Assigment1

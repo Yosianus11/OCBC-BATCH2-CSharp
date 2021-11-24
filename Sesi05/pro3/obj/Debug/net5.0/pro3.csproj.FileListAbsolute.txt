@@ -1,0 +1,16 @@
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.csproj.AssemblyReference.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.AssemblyInfoInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.AssemblyInfo.cs
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.csproj.CoreCompileInputs.cache
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.exe
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.deps.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.runtimeconfig.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.runtimeconfig.dev.json
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\ref\pro3.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\bin\Debug\net5.0\pro3.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\ref\pro3.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.pdb
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi05\pro3\obj\Debug\net5.0\pro3.genruntimeconfig.cache
