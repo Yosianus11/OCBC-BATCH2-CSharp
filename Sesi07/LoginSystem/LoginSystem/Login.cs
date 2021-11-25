@@ -18,7 +18,7 @@ namespace LoginSystem
         {
             InitializeComponent();
 
-            db.Connect("userdate");
+            db.Connect("userdata");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,11 +58,11 @@ namespace LoginSystem
 
         private void LB_login_Click(object sender, EventArgs e)
         {
-            db.ExecuteSelect("Select * FROM `user_info` where username='" + L_username_in + "'and password ='"+ L_password_in+"'");
+            db.ExecuteSelect("Select * FROM user_info where username ='" + L_username_in.Text + "' and password ='"+ L_password_in.Text+"'");
 
             if (db.Count() == 1)
             {
-                MessageBox.Show("Success You Login As" + db.Result(0, "names"));
+                MessageBox.Show("Success You Login As " + db.Result(0, "NAME"));
             }
         }
 

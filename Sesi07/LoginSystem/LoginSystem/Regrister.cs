@@ -101,8 +101,7 @@ namespace LoginSystem
 
         private void R_login_in_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
+            this.Close();
 
         }
     }

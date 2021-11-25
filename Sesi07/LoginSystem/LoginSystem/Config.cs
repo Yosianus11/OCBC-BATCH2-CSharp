@@ -10,13 +10,13 @@ using System.Data;
 
 namespace LoginSystem
 {
-    class Config
+    public class Config
     {
         string ConnectionString = "";
         public MySqlConnection connection = null;
         public string server = "localhost";
         public string user = "root";
-        public string password = " ";
+        public string password = "";
         DataSet ds;
         DataTable dt;
         public string Table = "user_info";
@@ -105,6 +105,7 @@ namespace LoginSystem
             RecordSource = Sql_command;
             ConnectionType = Table;
 
+            dt = new DataTable(ConnectionType);
             try
             {
                 string command = RecordSource.ToUpper();
