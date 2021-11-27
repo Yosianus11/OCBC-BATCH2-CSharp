@@ -34,7 +34,7 @@ namespace Kantor_WebAPI.Controllers
         }
 
         [HttpPost( Name = "POST")]
-        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem0(String nama, String jeniskelamin, String alamat)
+        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem0(String nama, Enum jeniskelamin, String alamat)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
             return _context.InsertEmployee(nama, jeniskelamin, alamat);

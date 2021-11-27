@@ -14,12 +14,14 @@ using System.Threading.Tasks;
 
 namespace Kantor_WebAPI
 {
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
+
 
         public IConfiguration Configuration { get; }
 
@@ -28,11 +30,13 @@ namespace Kantor_WebAPI
         {
 
             services.AddControllers();
+            
             services.Add(new ServiceDescriptor(typeof(Models.EmployeeContext), new Models.EmployeeContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.AddSwaggerGen(c =>
             {
                 services.Add(new ServiceDescriptor(typeof(Models.EmployeeContext), new Models.EmployeeContext(Configuration.GetConnectionString("DefaultConnection"))));
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication1", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Kantor API", Version = "v1" });
+               
             });
         }
 
@@ -44,6 +48,7 @@ namespace Kantor_WebAPI
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Kantor API v1"));
+                
             }
 
             app.UseHttpsRedirection();

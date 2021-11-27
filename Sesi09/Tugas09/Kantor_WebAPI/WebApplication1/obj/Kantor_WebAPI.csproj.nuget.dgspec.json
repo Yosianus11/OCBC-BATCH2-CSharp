@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosia\\source\\repos\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj": {}
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi09\\Tugas09\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosia\\source\\repos\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj": {
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi09\\Tugas09\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosia\\source\\repos\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi09\\Tugas09\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj",
         "projectName": "Kantor_WebAPI",
-        "projectPath": "C:\\Users\\yosia\\source\\repos\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj",
+        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi09\\Tugas09\\Kantor_WebAPI\\WebApplication1\\Kantor_WebAPI.csproj",
         "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yosia\\source\\repos\\Kantor_WebAPI\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi09\\Tugas09\\Kantor_WebAPI\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
