@@ -1,0 +1,22 @@
+Panduan Assigment 3
+
+Movie API Dengan JWT:
+
+Infrastructure API : database->SqlServer, Autorization/security -> JWT, editor -> Visual studioCode
+
+tahap setting:
+
+1. Exec MovieApi.sql/bisa migration dengan cara open folder terminal dan masukan :
+-  dotnet ef migrations add "Initial Migrations" -- Migration/setting MovieDB
+-  dotnet ef migrations add "Adding authentication to our Api" -- Setting JWT table
+-  dotnet ef database update -- update di database                                               
+2. Open Folder di visual studio code jalan kan dotnet run
+3. Buka Alamat https://localhost:5001/swagger/index.html / mengunakan postman
+4. Buka https://localhost:5001/api/AuthManagement/Register untuk register user
+5. Login user untuk mendapatkan token pada https://localhost:5001/api/AuthManagement/Register
+6. Lalu akses data dengan full access CRUD dengan alamat https://localhost:5001/api/Movie
+
+selamat menggunakan :D !!!!!!!!!!
+
+
+Link GIT : https://github.com/Yosianus11/OCBC-BATCH2-CSharp/tree/main/Assigment1
