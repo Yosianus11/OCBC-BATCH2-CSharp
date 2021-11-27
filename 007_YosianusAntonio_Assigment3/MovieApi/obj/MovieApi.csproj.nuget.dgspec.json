@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi10\\belajar\\TodoAppWithJWT\\TodoApp.csproj": {}
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Assigment3\\MovieApi\\MovieApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi10\\belajar\\TodoAppWithJWT\\TodoApp.csproj": {
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Assigment3\\MovieApi\\MovieApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi10\\belajar\\TodoAppWithJWT\\TodoApp.csproj",
-        "projectName": "TodoApp",
-        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi10\\belajar\\TodoAppWithJWT\\TodoApp.csproj",
+        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Assigment3\\MovieApi\\MovieApi.csproj",
+        "projectName": "MovieApi",
+        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Assigment3\\MovieApi\\MovieApi.csproj",
         "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi10\\belajar\\TodoAppWithJWT\\obj\\",
+        "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\007_YosianusAntonio_Assigment3\\MovieApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,27 +46,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.12, )"
-            },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
@@ -74,7 +70,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

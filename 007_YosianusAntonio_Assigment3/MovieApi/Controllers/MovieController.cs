@@ -1,45 +1,44 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using TodoAppWithJWT.Data;
-using TodoAppWithJWT.Models; 
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MovieApi.Data;
+using MovieApi.Models; 
 
-namespace TodoAppWithJWT.Controllers
+
+
+namespace MovieApi.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public class TodoController : ControllerBase
+   
+    public class MovieController : ControllerBase
     {
         private readonly ApiDbContext _context;
 
-        public TodoController(ApiDbContext context)
+        public MovieController(ApiDbContext context)
         {
             _context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetItems()
+        public async Task<IActionResult> GetMovie()
         {
-            var items = await _context.Items.ToListAsync();
-            return Ok(items);
+            var Movie = await _context.Movies.ToListAsync();
+            return Ok(Movie);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateItem(ItemData data)
+        public async Task<IActionResult> CreateItem(MovieData data)
         {
             if (ModelState.IsValid)
             {
-                await _context.Items.AddAsync(data);
+                await _context.Movies.AddAsync(data);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction("GetItem", new { data.Id }, data);
+                return CreatedAtAction("GetItem", new { data.ID }, data);
             }
 
             return new JsonResult("Something went wrong") { StatusCode = 500 };
@@ -49,7 +48,7 @@ namespace TodoAppWithJWT.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetItem(int id)
         {
-            var item = await _context.Items.FirstOrDefaultAsync(x => x.Id == id);
+            var item = await _context.Movies.FirstOrDefaultAsync(x => x.ID == id);
 
             if (item == null)
                 return NotFound();
@@ -58,18 +57,19 @@ namespace TodoAppWithJWT.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateItem(int id, ItemData item){
-            if(id!= item.Id)
+        public async Task<IActionResult> UpdateItem(int id, MovieData item){
+            if(id!= item.ID)
             return BadRequest();
 
-            var existItem = await _context.Items.FirstOrDefaultAsync(x => x.Id==id);
+            var existItem = await _context.Movies.FirstOrDefaultAsync(x => x.ID==id);
 
             if(existItem==null)
             return BadRequest();
 
-            existItem.Title = item.Title;
-            existItem.Description = item.Description;
-            existItem.Done = item.Done;
+            existItem.NAME = item.NAME;
+            existItem.GENRE = item.GENRE;
+            existItem.DURATION = item.DURATION;
+            existItem.RELEASE_DATE = item.RELEASE_DATE;
             
             await _context.SaveChangesAsync();
 
@@ -79,12 +79,12 @@ namespace TodoAppWithJWT.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteItem(int id)
         {
-            var existItem = await _context.Items.FirstOrDefaultAsync(x => x.Id == id);
+            var existItem = await _context.Movies.FirstOrDefaultAsync(x => x.ID == id);
 
             if(existItem == null)
             return NotFound();
 
-            _context.Items.Remove(existItem);
+            _context.Movies.Remove(existItem);
             await _context.SaveChangesAsync();
 
             return Ok(existItem);
