@@ -16,6 +16,7 @@ tahap setting:
 5. Login user untuk mendapatkan token pada https://localhost:5001/api/AuthManagement/Register
 6. Lalu akses data dengan full access CRUD dengan alamat https://localhost:5001/api/Movie
 
+
 selamat menggunakan :D !!!!!!!!!!
 
 
