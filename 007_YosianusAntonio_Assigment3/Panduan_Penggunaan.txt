@@ -16,7 +16,8 @@ tahap setting:
 5. Login user untuk mendapatkan token pada https://localhost:5001/api/AuthManagement/Register
 6. Lalu akses data dengan full access CRUD dengan alamat https://localhost:5001/api/Movie
 
+
 selamat menggunakan :D !!!!!!!!!!
 
 
-Link GIT : https://github.com/Yosianus11/OCBC-BATCH2-CSharp/tree/main/Assigment1
+Link GIT : https://github.com/Yosianus11/OCBC-BATCH2-CSharp/tree/main/007_YosianusAntonio_Assigment3
