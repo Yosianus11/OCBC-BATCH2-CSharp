@@ -128,3 +128,5 @@ C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJ
 C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJWT\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\yosia\OneDrive\Documents\OCBC NISP\Bootcamp\Sesi10\belajar\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll

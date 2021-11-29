@@ -1,8 +1,9 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using MySql.Data.MySqlClient;
 
 namespace Kantor_WebAPI.Models
 {
@@ -23,7 +24,6 @@ namespace Kantor_WebAPI.Models
         public List<EmployeeItem> GetAllEmployee()
         {
             List<EmployeeItem> list = new List<EmployeeItem>();
-
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
@@ -36,8 +36,9 @@ namespace Kantor_WebAPI.Models
                         {
                             id = reader.GetInt32("id"),
                             nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
+                            jeniskelamin = reader.GetString("jeniskelamin"),
                             alamat = reader.GetString("alamat")
+
                         });
                     }
                 }
@@ -48,13 +49,11 @@ namespace Kantor_WebAPI.Models
         public List<EmployeeItem> GetEmployee(string id)
         {
             List<EmployeeItem> list = new List<EmployeeItem>();
-
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM employee WHERE id = @id", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM employee where id = @id", conn);
                 cmd.Parameters.AddWithValue("@id", id);
-
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -63,162 +62,85 @@ namespace Kantor_WebAPI.Models
                         {
                             id = reader.GetInt32("id"),
                             nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
+                            jeniskelamin = reader.GetString("jeniskelamin"),
                             alamat = reader.GetString("alamat")
+
                         });
                     }
                 }
-            }
-
-            return list;
-        }
-
-        public List<EmployeeItem> InsertEmployee(string nama, string jeniskelamin, string alamat)
-        {
-            List<EmployeeItem> list = new List<EmployeeItem>();
-
-            using (MySqlConnection conn = GetConnection())
-            {
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO employee (nama, jenis_kelamin, alamat) VALUES (@nama, @jenis_kelamin,@alamat)", conn);
-                cmd.Parameters.AddWithValue("@nama", nama);
-                cmd.Parameters.AddWithValue("@jenis_kelamin", jeniskelamin);
-                cmd.Parameters.AddWithValue("@alamat", alamat);
-
-                using (MySqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
-                    }
-                }
-
-
-                MySqlCommand cmds = new MySqlCommand("SELECT * FROM employee WHERE nama = @nama", conn);
-                cmds.Parameters.AddWithValue("@nama", nama);
-
-
-                using (MySqlDataReader reader = cmds.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
-                    }
-                }
-
             }
             return list;
         }
 
-        public List<EmployeeItem> UpdateEmployee(string id, string nama, string jeniskelamin, string alamat)
+        public JsonResult InsertEmployee(EmployeeItem item)
         {
-            List<EmployeeItem> list = new List<EmployeeItem>();
-
+            string result;
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("UPDATE employee nama=@nama, jenis_kelamin=@jeniskelamin, alamat=@alamat WHERE id = @id", conn);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@nama", nama);
-                cmd.Parameters.AddWithValue("@jenis_kelamin", jeniskelamin);
-                cmd.Parameters.AddWithValue("@alamat", alamat);
 
+                MySqlCommand cmd = new MySqlCommand(
+                    $"INSERT INTO employee VALUES ('{item.id}','{item.nama}','{item.jeniskelamin}','{item.alamat}')", conn);
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (reader.Read())
+                    if (reader != null)
                     {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
+                        result = "Data Berhasil di ditambahkan!";
+                    }
+                    else
+                    {
+                        result = "Something Went Wrong";
                     }
                 }
-
-
-                MySqlCommand cmds = new MySqlCommand("SELECT * FROM employee WHERE id = @id", conn);
-                cmds.Parameters.AddWithValue("@id", id);
-
-
-                using (MySqlDataReader reader = cmds.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
-                    }
-                }
-
             }
-            return list;
+            return new JsonResult(result);
         }
 
-        public List<EmployeeItem> DelEmployee(string id)
+        public JsonResult UpdateEmployee(string id, EmployeeItem item)
         {
-            List<EmployeeItem> list = new List<EmployeeItem>();
-
+            string result;
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM employee WHERE id = @id", conn);
+                MySqlCommand cmd = new MySqlCommand(
+                    $"UPDATE employee SET Id={item.id},Nama='{item.nama}',jeniskelamin='{item.jeniskelamin}',Alamat='{item.alamat}' WHERE Id = @id", conn);
                 cmd.Parameters.AddWithValue("@id", id);
-
-
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (reader.Read())
+                    if (reader != null)
                     {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
+                        result = "Data Berhasil di Update!";
+                    }
+                    else
+                    {
+                        result = "Something Went Wrong";
                     }
                 }
-
-                MySqlCommand cmds = new MySqlCommand("DELETE FROM employee WHERE id = @id", conn);
-                cmds.Parameters.AddWithValue("@id", id);
-
-                using (MySqlDataReader reader = cmds.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        list.Add(new EmployeeItem()
-                        {
-                            id = reader.GetInt32("id"),
-                            nama = reader.GetString("nama"),
-                            jenisKelamin = reader.GetString("jenis_kelamin"),
-                            alamat = reader.GetString("alamat")
-                        });
-                    }
-                }
-                return list;
-                
             }
-
-            
+            return new JsonResult(result);
         }
 
+        public JsonResult DelEmployee(string id)
+        {
+            string result;
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM employee WHERE Id = @id", conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader != null)
+                    {
+                        result = "Data Berhasil Dihapus!";
+                    }
+                    else
+                    {
+                        result = "Something Went Wrong!";
+                    }
+                }
+            }
+            return new JsonResult(result);
+        }
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Kantor_WebAPI.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : Controller
     {
@@ -34,24 +34,26 @@ namespace Kantor_WebAPI.Controllers
         }
 
         [HttpPost( Name = "POST")]
-        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem0(String nama, String jeniskelamin, String alamat)
+        public ActionResult<IEnumerable<EmployeeItem>> InsertEmployee(EmployeeItem item)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
-            return _context.InsertEmployee(nama, jeniskelamin, alamat);
-        }
+            return _context.InsertEmployee(item);
 
-        [HttpPut(Name = "PUT")]
-        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem2(String id,String nama, String jeniskelamin, String alamat)
+        }
+         [HttpPut("{id}", Name = "PUT")]
+        public ActionResult<IEnumerable<EmployeeItem>> UpdateEmployee(String id,EmployeeItem item)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
-            return _context.UpdateEmployee(id, nama, jeniskelamin, alamat);
+            return _context.UpdateEmployee(id,item);
+
         }
 
-        [HttpDelete ("{id}", Name = "Delete")]
-        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem1(String id)
+        [HttpDelete("{id}", Name = "DEL")]
+        public ActionResult<IEnumerable<EmployeeItem>> DeleteEmployee(String id)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
             return _context.DelEmployee(id);
+
         }
     }
 }
