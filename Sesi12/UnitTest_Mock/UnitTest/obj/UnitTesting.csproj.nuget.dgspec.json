@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTest.csproj": {}
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTest.csproj": {
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTest.csproj",
-        "projectName": "UnitTest",
-        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTesting.csproj",
+        "projectName": "UnitTesting",
+        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\UnitTesting.csproj",
         "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",

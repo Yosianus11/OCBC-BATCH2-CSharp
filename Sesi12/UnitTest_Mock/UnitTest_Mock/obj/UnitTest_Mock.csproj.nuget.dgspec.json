@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosia\\source\\repos\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosia\\source\\repos\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
+    "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosia\\source\\repos\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectUniqueName": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "projectName": "UnitTest_Mock",
-        "projectPath": "C:\\Users\\yosia\\source\\repos\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "packagesPath": "C:\\Users\\yosia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yosia\\source\\repos\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
+        "outputPath": "C:\\Users\\yosia\\OneDrive\\Documents\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
