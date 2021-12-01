@@ -1,0 +1,16 @@
+Payment Api
+
+adalah sebuah web service API yang menyediakan layanan untuk payment anda menggunakan JWT authentication, untuk membuild app
+
+langkah yang perlu di ketahui untuk menggunakan service ini adalah 
+1. register untuk user baru untuk dapat login dan mendapatkan token dan refreh token.
+  - register :https://payment-a.herokuapp.com/api/AuthManagement/Register
+  - login    :https://payment-a.herokuapp.com/api/AuthManagement/Login
+
+2. simpan masukan token kedalam Authorization untuk mengakses data dari pembayaran
+   URL :https://payment-a.herokuapp.com/api/payment
+
+3. Jika token exp maka masukan RefreshToken yang di berikan saat login untuk mendapat token terbaru.
+   URL :https://payment-a.herokuapp.com/api/AuthManagement/RefreshToken
+
+Slemat mengguanakan :D !!!!
