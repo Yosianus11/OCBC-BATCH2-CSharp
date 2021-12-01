@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "0ebd8f7d-3071-43a3-8f28-ab05ab1671cf",
+		"name": "Final Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Indra\",\r\n  \"email\": \"indra@gmail.com\",\r\n  \"password\": \"Indra_123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://payment-a.herokuapp.com/api/AuthManagement/Register"
+			},
+			"response": []
+		},
+		{
+			"name": "1 Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"yosianus@gmail.com\",\r\n  \"password\": \"Yos_123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://payment-a.herokuapp.com/api/AuthManagement/Login"
+			},
+			"response": []
+		},
+		{
+			"name": "1 Refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA5NWY5ZWE1LWJhZWYtNGIwOC1iNDFiLWZlMmY4NTQ5Mzk3MSIsImVtYWlsIjoieW9zaWFudXNAZ21haWwuY29tIiwic3ViIjoieW9zaWFudXNAZ21haWwuY29tIiwianRpIjoiNGUyMjU5ODgtZjBmNC00YTU2LTk0NmQtNjc3ZTA1ZTYxYjEyIiwibmJmIjoxNjM4MzQ0MzE2LCJleHAiOjE2MzgzNDc5MTYsImlhdCI6MTYzODM0NDMxNn0.QNnu2zcTqLrNP5yRXRpA_uJgXFYOUdm2cbq7An9WYCk\",\r\n  \"refreshToken\": \"GAW0BREI0W699TYSUND0QPA55OWTWACYPLZ63ef42a0-24a4-4404-b45b-53ef0ba12df9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://payment-a.herokuapp.com/api/AuthManagement/RefreshToken"
+			},
+			"response": []
+		},
+		{
+			"name": "2 Get PaymentDetail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA5NWY5ZWE1LWJhZWYtNGIwOC1iNDFiLWZlMmY4NTQ5Mzk3MSIsImVtYWlsIjoieW9zaWFudXNAZ21haWwuY29tIiwic3ViIjoieW9zaWFudXNAZ21haWwuY29tIiwianRpIjoiNGVjNDZmOGItYjAwNy00ZjVjLWExZDUtMWU5YmU1YzM5MmZiIiwibmJmIjoxNjM4MzM4NjExLCJleHAiOjE2MzgzNDIyMTEsImlhdCI6MTYzODMzODYxMX0.FK2Q5Vo5_aWk13tFgx51w3R_P6_QmLNjKxBbVnEp6Yg",
+						"type": "text"
+					}
+				],
+				"url": "https://payment-a.herokuapp.com/api/payment"
+			},
+			"response": []
+		},
+		{
+			"name": "2 Add Payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA5NWY5ZWE1LWJhZWYtNGIwOC1iNDFiLWZlMmY4NTQ5Mzk3MSIsImVtYWlsIjoieW9zaWFudXNAZ21haWwuY29tIiwic3ViIjoieW9zaWFudXNAZ21haWwuY29tIiwianRpIjoiZGEwZjExMjctNTUzYi00NTkzLWI1ZGUtMTJkYTU4NDllNzBlIiwibmJmIjoxNjM4MzQ3OTI1LCJleHAiOjE2MzgzNTE1MjUsImlhdCI6MTYzODM0NzkyNX0.rRyqWqmlM4AoniQ2FrhSg0VmaMxUwUzd1S9lsXysUoE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentDetailId \" : \"3\",\r\n  \"cardOwnerName\": \"Andrea\",\r\n  \"cardNumber\": \"453452\",\r\n  \"expirationDate\": \"2023-12-01\",\r\n  \"securityCode\": \"Kljad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://payment-a.herokuapp.com/api/payment"
+			},
+			"response": []
+		},
+		{
+			"name": "2 Update Payment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA5NWY5ZWE1LWJhZWYtNGIwOC1iNDFiLWZlMmY4NTQ5Mzk3MSIsImVtYWlsIjoieW9zaWFudXNAZ21haWwuY29tIiwic3ViIjoieW9zaWFudXNAZ21haWwuY29tIiwianRpIjoiODU2MjBiZmEtNGQ1Ny00NGM5LWJjMGYtZDgyYjRlOWMzZDI3IiwibmJmIjoxNjM4MzQ5MjQyLCJleHAiOjE2MzgzNTI4NDIsImlhdCI6MTYzODM0OTI0Mn0.R_9TlmeZCvTy7Pe3cMWxgYwDKHdvp10HxkOdx2L0aww",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"paymentDetailId\": 3,\r\n            \"cardOwnerName\": \"Andrea\",\r\n            \"cardNumber\": \"453452\",\r\n            \"expirationDate\": \"2023-12-01T00:00:00\",\r\n            \"securityCode\": \"apa aja\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://payment-a.herokuapp.com/api/payment/3"
+			},
+			"response": []
+		},
+		{
+			"name": "2 Delete Payment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA5NWY5ZWE1LWJhZWYtNGIwOC1iNDFiLWZlMmY4NTQ5Mzk3MSIsImVtYWlsIjoieW9zaWFudXNAZ21haWwuY29tIiwic3ViIjoieW9zaWFudXNAZ21haWwuY29tIiwianRpIjoiMWJiNjhiMWMtZjJkZS00MTJlLTlhMmMtMWE5OGU3ZDE1MGJhIiwibmJmIjoxNjM4MzQ5OTQwLCJleHAiOjE2MzgzNTM1NDAsImlhdCI6MTYzODM0OTk0MH0.uxTMG2dWyQnQaSqta1lmEgbonucAoSXOUIi3LFaDkO0",
+						"type": "text"
+					}
+				],
+				"url": "https://payment-a.herokuapp.com/api/payment/4"
+			},
+			"response": []
+		},
+		{
+			"name": "2 Get Payment with ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
